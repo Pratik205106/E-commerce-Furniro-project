@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="flex items-center justify-between py-6 px-4 lg:px-24 sticky top-0 bg-white z-50">
+    <a href="./index1.html"><img src="/image/company-logo.svg" alt="Company Logo" class="w-24 lg:w-32"></a>
+    <nav class="hidden lg:flex space-x-8">
+      <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+      <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+      <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+      <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <a href="./profile.html"><img src="/image/profile.svg" alt="Profile" class="w-6"></a>
+      <a href="./search.html"><img src="/image/search.svg" alt="Search" class="w-6"></a>
+      <a href="./favorites.html"><img src="/image/heart.svg" alt="Favorites" class="w-6"></a>
+      <a href="./cart.html"><img src="/image/cart.svg" alt="Cart" class="w-6"></a>
+    </div>
+    <button class="lg:hidden flex flex-col space-y-1 focus:outline-none" id="menu-toggle">
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+    </button>
+    <div class="absolute top-16 right-4 bg-white shadow-md rounded-lg p-4 space-y-4 hidden" id="mobile-menu">
+      <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+      <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+      <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+      <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+    </div>
+  </header>
+  <section class="bg-hero-pattern bg-cover bg-center h-[12rem] sm:h-[16rem] md:h-[19.75rem] lg:h-[24rem] xl:h-[28rem] flex flex-col items-center justify-center">
+    <img src="image/image.cart/logo.svg" alt="" srcset="" class="mb-[-1.5625rem]">  
+    <h1 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4rem] font-medium text-center px-4">
+      Cart
+    </h1>
+    <div class="flex items-center mt-2 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl space-x-2">
+      <a href="" class="font-medium">Home</a>
+      <img src="image/image.product/Vector (2).svg" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" alt="">
+      <a href="" class="font-medium">cart</a>
+    </div>
+  </section>
+    <!-- Cart Section -->
+    <div class="flex flex-col lg:flex-row mx-4 lg:mx-24 my-8 space-y-8 lg:space-y-0 lg:space-x-8">
+      <!-- Cart Items -->
+      <div class="flex-1">
+        <div class="bg-[#F9F1E7] font-medium text-center py-4 rounded-md">
+          <ul class="flex justify-between items-center px-6 text-sm sm:text-base">
+            <li>Product</li>
+            <li>Price</li>
+            <li>Quantity</li>
+            <li>Subtotal</li>
+          </ul>
+        </div>
+        <div class="flex items-center mt-6 space-x-4 bg-white shadow rounded-md p-4">
+          <img class="w-24 h-24 object-cover bg-[#F9F1E7] rounded" src="image/image.product/Asgaard sofa.svg" alt="Asgaard Sofa">
+          <div class="flex-1 flex flex-col sm:flex-row justify-between items-center text-sm sm:text-base space-y-2 sm:space-y-0">
+            <p class="text-[#9F9F9F]">Asgaard Sofa</p>
+            <p class="text-[#9F9F9F]">Rs. 250,000.00</p>
+            <input type="number" value="1" class="w-16 text-center border rounded-md">
+            <p>Rs. 250,000.00</p>
+            <button aria-label="Remove Item">
+              <img class="w-6 h-6" src="image5/Vector (3).svg" alt="Remove">
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Cart Totals -->
+      <div class="w-full lg:w-96 bg-[#F9F1E7] p-6 rounded-md shadow">
+        <h2 class="text-2xl font-semibold text-center">Cart Totals</h2>
+        <div class="flex justify-between mt-6 text-sm sm:text-base">
+          <p class="font-medium">Subtotal</p>
+          <p class="text-[#9F9F9F]">Rs. 250,000.00</p>
+        </div>
+        <div class="flex justify-between mt-4 text-sm sm:text-base">
+          <p class="font-medium">Total</p>
+          <p class="text-[#B88E2F]">Rs. 250,000.00</p>
+        </div>
+        <div class="mt-6">
+          <button class="w-full py-3 border-[.0625rem] border-[#000000] text-[#000000] font-medium rounded-md">
+            Check Out
+          </button>
+        </div>
+      </div>
+    </div>
+  <section class="flex flex-wrap justify-around items-center text-center h-auto bg-[#FAF3EA] mt-[5.3125rem] gap-8 p-6">
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <div>
+        <img src="image/image.shop/Group.svg" alt="High Quality" class="h-16 w-16">
+      </div>
+      <div class="text-start">
+        <p class="font-semibold">High Quality</p>
+        <p>crafted from top materials</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <div>
+        <img src="image/image.shop/guarantee.svg" alt="Warranty Protection" class="h-16 w-16">
+      </div>
+      <div class="text-start">
+        <p class="font-semibold">Warranty Protection</p>
+        <p>Over 2 years</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <div>
+        <img src="image/image.shop/Vector (1).svg" alt="Free Shipping" class="h-16 w-16">
+      </div>
+      <div class="text-start">
+        <p class="font-semibold">Free Shipping</p>
+        <p>Order over 150 $</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3 w-full sm:w-auto">
+      <div>
+        <img src="image/image.shop/customer-support.svg" alt="24/7 Support" class="h-16 w-16">
+      </div>
+      <div class="text-start">
+        <p class="font-semibold">24 / 7 Support</p>
+        <p>Dedicated support</p>
+      </div>
+    </div>
+  </section>
+  <footer class="border-t-2">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-5 px-6 md:px-[6.25rem]">
+
+      <div class="mb-8">
+        <div class="font-bold pt-8">Funiro.</div>
+        <h6 class="text-primary-450 pt-8 text-sm">
+          400 University Drive Suite 200 Coral <br /> Gables, <br /> FL 33134 USA
+        </h6>
+      </div>
+      <ul class="">
+        <h6 class="text-primary-450 pt-8 text-sm font-medium">Links</h6>
+        <li class="font-semibold pt-6">Home</li>
+        <li class="font-semibold pt-4">Shop</li>
+        <li class="font-semibold pt-4">About</li>
+        <li class="font-semibold pt-4 pb-8">Contact</li>
+      </ul>
+
+
+      <ul>
+        <h6 class="text-primary-450 pt-8 text-sm font-medium">Help</h6>
+        <li class="font-semibold pt-6">Payment Options</li>
+        <li class="font-semibold pt-4">Returns</li>
+        <li class="font-semibold pt-4">Privacy Policies</li>
+      </ul>
+      <div>
+        <h6 class="text-primary-450 pt-8 text-sm font-medium">Newsletter</h6>
+        <ul class="grid grid-cols-1">
+          <li class="text-primary-450 underline pt-6 text-sm">
+            Enter Your Email Address
+          </li>
+          <li class="underline font-semibold list-none pt-8">SUBSCRIBE</li>
+        </ul>
+      </div>
+      <div class="col-span-full md:col-span-5 border-t pt-4">
+        <p class="text-center text-sm font-medium">
+          2023 Funiro. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'hero-pattern': "url('/image/image.shop/background.pic.svg')",
+        },
+
+        colors: {
+          primary: {
+            50: '#FCF8F3',
+            100: '#FFF3E3',
+            150: '#9F9F9F',
+            200: 'rgba(137, 137, 137, 1)',
+            250: 'rgba(58, 58, 58, 1)',
+            280: ' #333333',
+            300: 'rgba(176, 176, 176, 1)',
+            320: '#666666',
+            350: '#F4F5F7',
+            400: 'rgba(252, 248, 243, 1)',
+            450: '#9F9F9F',
+            500: 'rgba(255, 243, 227, 1)',
+            550: '#F9F1E7',
+            700: 'rgba(184, 142, 47, 1)',
+            900: '#B88E2F',
+            950: 'rgba(97, 97, 97, 1)',
+            1000: '#FCF8F3',
+
+
+
+
+          },
+
+          success: "#2EC1AC",
+          danger: "#E97171",
+          info: "#816DFA",
+          content: {
+            color: "#333333"
+
+          }
+
+
+        }
+      }
+    }
+  }
+</script>
+<script src="./index.js"></script>
+</html>

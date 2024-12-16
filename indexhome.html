@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex items-center justify-between py-6 px-4 lg:px-24 sticky top-0 bg-white z-50">
+        <a href="./index1.html"><img src="/image/company-logo.svg" alt="Company Logo" class="w-24 lg:w-32"></a>
+        <nav class="hidden lg:flex space-x-8">
+            <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+            <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+            <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+            <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <a href="./profile.html"><img src="/image/profile.svg" alt="Profile" class="w-6"></a>
+            <a href="./search.html"><img src="/image/search.svg" alt="Search" class="w-6"></a>
+            <a href="./favorites.html"><img src="/image/heart.svg" alt="Favorites" class="w-6"></a>
+            <a href="./cart.html"><img src="/image/cart.svg" alt="Cart" class="w-6"></a>
+        </div>
+        <button class="lg:hidden flex flex-col space-y-1 focus:outline-none" id="menu-toggle">
+            <span class="w-6 h-1 bg-black"></span>
+            <span class="w-6 h-1 bg-black"></span>
+            <span class="w-6 h-1 bg-black"></span>
+        </button>
+        <div class="absolute top-16 right-4 bg-white shadow-md rounded-lg p-4 space-y-4 hidden" id="mobile-menu">
+            <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+            <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+            <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+            <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+        </div>
+    </header>
+    <section class="bg-hero-pattern flex items-center justify-center lg:justify-end py-12">
+        <div
+            class="bg-primary-500 p-6 lg:p-10 rounded-md max-w-lg lg:max-w-xl w-full lg:w-[643px] lg:mr-12 lg:ml-auto lg:h-[27.6875rem]">
+            <p class="text-sm lg:text-base font-semibold pt-4 lg:pt-8">New Arrival</p>
+            <h1
+                class="font-bold text-xl lg:text-4xl text-primary-900 leading-tight lg:leading-[4.06rem] mt-4 lg:mt-6 mb-4">
+                Discover Our<br>
+                New Collection
+            </h1>
+            <p class="text-sm lg:text-lg text-gray-700 mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br class="hidden lg:inline"> Ut elit tellus,
+                luctus nec
+                ullamcorper mattis.
+            </p>
+            <button class="text-white text-sm lg:text-base px-6 lg:px-10 py-3 lg:py-4 bg-primary-900 rounded">
+                BUY NOW
+            </button>
+        </div>
+    </section>
+    <section class="mt-14">
+        <h1 class="text-center font-bold text-xl lg:text-2xl text-primary-280">
+            Browse The Range
+        </h1>
+        <p class="text-center text-sm lg:text-lg text-primary-320 mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-6 lg:px-20">
+            <div class="text-center">
+                <img src="/image2/Dining.svg" alt="Dining" class="mx-auto">
+                <p class="font-semibold text-base lg:text-lg mt-6">Dining</p>
+            </div>
+            <div class="text-center">
+                <img src="/image2/living.svg" alt="Living" class="mx-auto">
+                <p class="font-semibold text-base lg:text-lg mt-6">Living</p>
+            </div>
+            <div class="text-center">
+                <img src="/image2/bedroom.svg" alt="Bedroom" class="mx-auto">
+                <p class="font-semibold text-base lg:text-lg mt-6">Bedroom</p>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 px-4 sm:px-20">
+        <h1 class="text-center font-bold text-2xl sm:text-3xl lg:text-4xl mb-10">Our Products</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/syltherine.svg" alt="Syltherine" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Syltherine</h3>
+                    <p class="text-sm text-gray-500">Stylish cafe chair</p>
+                    <div class="flex items-center mt-2">
+                        <span class="font-semibold">Rp 2.500.000</span>
+                        <del class="text-gray-400 ml-2">Rp 3.500.000</del>
+                    </div>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-[#E97171] rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    -30%
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/leviosa.svg" alt="Leviosa" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Leviosa</h3>
+                    <p class="text-sm text-gray-500">Stylish cafe chair</p>
+                    <span class=" font-semibold">Rp 2.500.000</span>
+                </div>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/lolito.svg" alt="Lolito" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Lolito</h3>
+                    <p class="text-sm text-gray-500">Luxury big sofa</p>
+                    <div class="flex items-center mt-2">
+                        <span class="font-semibold">Rp 7.000.000</span>
+                        <del class="text-gray-400 ml-2">Rp 14.000.000</del>
+                    </div>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-[#E97171] rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    -50%
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/respira.svg" alt="Respira" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Respira</h3>
+                    <p class="text-sm text-gray-500">Outdoor bar table and stool</p>
+                    <span class="font-semibold">Rp 5.000.000</span>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-green-500 rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    New
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-4">
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/grifo.svg" alt="Grifo" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Grifo</h3>
+                    <p class="text-sm text-gray-500">Night Lamp</p>
+                    <div class="flex items-center mt-2">
+                        <span class="font-semibold">Rp 1.500.000</span>
+                    </div>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-[#E97171] rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    -30%
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/muggo.svg" alt="Muggo" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Muggo</h3>
+                    <p class="text-sm text-gray-500">Small mug</p>
+                    <span class="font-semibold">Rp 1.50.000</span>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-green-500 rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    New
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/pingky.svg" alt="Pingky" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Pingky</h3>
+                    <p class="text-sm text-gray-500">Cute bed set</p>
+                    <div class="flex items-center mt-2">
+                        <span class="font-semibold">Rp 7.000.000</span>
+                        <del class="text-gray-400 ml-2">Rp 14.000.000</del>
+                    </div>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-[#E97171] rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    -50%
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#F4F5F7] p-6 relative group rounded-md shadow-sm">
+                <img src="image3/potty.svg" alt="Potty" class="w-full h-100 object-cover rounded-md">
+                <div class="mt-4">
+                    <h3 class="font-semibold">Potty</h3>
+                    <p class="text-sm text-gray-500">Minimalist flower pot</p>
+                    <span class="font-semibold">Rp 5.000.000</span>
+                </div>
+                <span
+                    class="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-green-500 rounded-full text-white absolute top-10 right-12 text-xs sm:text-sm font-medium">
+                    New
+                </span>
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                    <button class="bg-white text-black px-4 py-2 rounded font-semibold">Add to Cart</button>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="image3/share.svg" alt="Share" class="w-100 cursor-pointer">
+                        <img src="image3/compare.svg" alt="Compare" class="w-100 cursor-pointer">
+                        <img src="image3/like.svg" alt="Like" class="w-100 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+            <button
+                class="px-6 py-3 border border-[#B88E2F] text-[#B88E2F] bg-white hover:bg-gray-100 rounded font-semibold">
+                Show More
+            </button>
+        </div>
+    </section>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 bg-[#FCF8F3]">
+        <div class="p-4 flex items-center justify-center">
+            <img src="image4/inner peace.svg" alt="Inner Peace" class="max-h-100">
+        </div>
+        <div class="p-4 flex items-center justify-center">
+            <img src="image4/chair.svg" alt="Chair" class="max-h-100">
+        </div>
+        <div class="p-4 flex items-center justify-center">
+            <img src="image4/Drawar.svg" alt="Drawer" class="max-h-100">
+        </div>
+    </div>
+    </section>
+    <section class="mt-10 mb-8 px-4 md:mt-16 md:mb-12 md:px-20 lg:px-48">
+        <h5 class="text-gray-600 font-semibold text-center pb-2 text-sm md:text-base">
+            Share your setup with
+        </h5>
+        <h1 class="text-primary-250 font-bold text-2xl md:text-4xl text-center">
+            #FuniroFurniture
+        </h1>
+    </section>
+    <footer class="border-t-2">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-5 px-6 md:px-[6.25rem]">
+
+            <div class="mb-8">
+                <div class="font-bold pt-8">Funiro.</div>
+                <h6 class="text-primary-450 pt-8 text-sm">
+                    400 University Drive Suite 200 Coral <br /> Gables, <br /> FL 33134 USA
+                </h6>
+            </div>
+            <ul class="">
+                <h6 class="text-primary-450 pt-8 text-sm font-medium">Links</h6>
+                <li class="font-semibold pt-6">Home</li>
+                <li class="font-semibold pt-4">Shop</li>
+                <li class="font-semibold pt-4">About</li>
+                <li class="font-semibold pt-4 pb-8">Contact</li>
+            </ul>
+            <ul>
+                <h6 class="text-primary-450 pt-8 text-sm font-medium">Help</h6>
+                <li class="font-semibold pt-6">Payment Options</li>
+                <li class="font-semibold pt-4">Returns</li>
+                <li class="font-semibold pt-4">Privacy Policies</li>
+            </ul>
+            <div>
+                <h6 class="text-primary-450 pt-8 text-sm font-medium">Newsletter</h6>
+                <ul class="grid grid-cols-1">
+                    <li class="text-primary-450 underline pt-6 text-sm">
+                        Enter Your Email Address
+                    </li>
+                    <li class="underline font-semibold list-none pt-8">SUBSCRIBE</li>
+                </ul>
+            </div>
+            <div class="col-span-full md:col-span-5 border-t pt-4">
+                <p class="text-center text-sm font-medium">
+                    2023 Funiro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                backgroundImage: {
+                    'hero-pattern': "url('/image/background.svg')",
+
+                },
+
+                colors: {
+                    primary: {
+                        50: '#FCF8F3',
+                        100: '#FFF3E3',
+                        150: '#9F9F9F',
+                        200: 'rgba(137, 137, 137, 1)',
+                        250: 'rgba(58, 58, 58, 1)',
+                        280: ' #333333',
+                        300: 'rgba(176, 176, 176, 1)',
+                        320: '#666666',
+                        350: '#F4F5F7',
+                        400: 'rgba(252, 248, 243, 1)',
+                        450: '#9F9F9F',
+
+                        500: 'rgba(255, 243, 227, 1)',
+                        700: 'rgba(184, 142, 47, 1)',
+                        900: '#B88E2F',
+                        950: 'rgba(97, 97, 97, 1)',
+                        1000: '#FCF8F3',
+
+
+                    },
+
+                    success: "#2EC1AC",
+                    danger: "#E97171",
+                    info: "#816DFA",
+                    content: {
+                        color: "#333333"
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+</script>
+<script src="./index.js"></script>
+
+</html>

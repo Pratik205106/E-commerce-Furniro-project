@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="flex items-center justify-between py-6 px-4 lg:px-24 sticky top-0 bg-white z-50">
+    <a href="./index1.html"><img src="/image/company-logo.svg" alt="Company Logo" class="w-24 lg:w-32"></a>
+    <nav class="hidden lg:flex space-x-8">
+      <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+      <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+      <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+      <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <a href="./profile.html"><img src="/image/profile.svg" alt="Profile" class="w-6"></a>
+      <a href="./search.html"><img src="/image/search.svg" alt="Search" class="w-6"></a>
+      <a href="./favorites.html"><img src="/image/heart.svg" alt="Favorites" class="w-6"></a>
+      <a href="./cart.html"><img src="/image/cart.svg" alt="Cart" class="w-6"></a>
+    </div>
+    <button class="lg:hidden flex flex-col space-y-1 focus:outline-none" id="menu-toggle">
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+      <span class="w-6 h-1 bg-black"></span>
+    </button>
+    <div class="absolute top-16 right-4 bg-white shadow-md rounded-lg p-4 space-y-4 hidden" id="mobile-menu">
+      <a href="./index1.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Home</a>
+      <a href="./indexshop.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Shop</a>
+      <a href="./indexabout.html" class="text-base font-medium cursor-pointer hover:text-gray-600">About</a>
+      <a href="./indexcontact.html" class="text-base font-medium cursor-pointer hover:text-gray-600">Contact</a>
+    </div>
+  </header>
+  <section class="bg-hero-pattern bg-cover bg-center h-[12rem] sm:h-[16rem] md:h-[19.75rem] lg:h-[24rem] xl:h-[28rem] flex flex-col items-center justify-center"> 
+    <h1 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] xl:text-[4rem] font-medium text-center px-4">
+      checkout
+    </h1>
+    <div class="flex items-center mt-2 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl space-x-2">
+      <a href="" class="font-medium">Home</a>
+      <img src="image/image.product/Vector (2).svg" class="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" alt="">
+      <a href="" class="font-medium">checkout</a>
+    </div>
+  </section>
+  <section class="max-w-[77.625rem] mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 lg:px-0">
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Billing Details</h2>
+      <form action="#" method="POST" class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="first-name" class="block font-medium mb-1">First Name</label>
+            <input type="text" id="first-name" name="first-name" class="border rounded-lg w-full h-12 px-4">
+          </div>
+          <div>
+            <label for="last-name" class="block font-medium mb-1">Last Name</label>
+            <input type="text" id="last-name" name="last-name" class="border rounded-lg w-full h-12 px-4">
+          </div>
+        </div>
+        <div>
+          <label for="company-name" class="block font-medium mb-1">Company Name (Optional)</label>
+          <input type="text" id="company-name" name="company-name" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="country" class="block font-medium mb-1">Country / Region</label>
+          <input type="text" id="country" name="country" class="border rounded-lg w-full h-12 px-4">
+           <!-- <select name="" id="" class="border rounded-lg w-full h-12 px-4 mb-14">
+            <option value="">Nepal</option> -->
+            <!-- <option value="">Sri-Lanka</option>
+            <option value="">Pakistan</option>
+            <option value="">India</option>
+            <option value="">Maldivs</option>
+            <option value="">Bhutan</option> -->
+        </div>
+        <div>
+          <label for="street-address" class="block font-medium mb-1">Street Address</label>
+          <input type="text" id="street-address" name="street-address" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="city" class="block font-medium mb-1">Town / City</label>
+          <input type="text" id="city" name="city" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="province" class="block font-medium mb-1">Province</label>
+          <input type="text" id="province" name="province" class="border rounded-lg w-full h-12 px-4">
+           <!-- <select name="" id="" class="border rounded-lg w-full h-12 px-4 mb-14"> -->
+            <!-- <option value="">Eastern Province</option> 
+             <option value="">Wastern Province</option>
+            <option value="">Northern Province</option>
+            <option value="">Southern Province</option> -->
+        </div>
+        <div>
+          <label for="zip-code" class="block font-medium mb-1">ZIP Code</label>
+          <input type="text" id="zip-code" name="zip-code" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="phone" class="block font-medium mb-1">Phone</label>
+          <input type="text" id="phone" name="phone" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="email" class="block font-medium mb-1">Email Address</label>
+          <input type="email" id="email" name="email" class="border rounded-lg w-full h-12 px-4">
+        </div>
+        <div>
+          <label for="additional-info" class="block font-medium mb-1">Additional Information</label>
+          <textarea id="additional-info" name="additional-info" class="border rounded-lg w-full px-4 h-24"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="grid gap-8">
+      <div class="p-4 rounded-lg">
+        <div class="grid grid-cols-2 mb-4">
+          <h1 class="font-medium text-lg">Product</h1>
+          <h1 class="font-medium text-lg text-right">Subtotal</h1>
+        </div>
+        <div class="grid grid-cols-3 items-center">
+          <h1 class="text-sm text-[#9F9F9F]">Asgaard sofa</h1>
+          <h1 class="text-center font-medium">X 1</h1>
+          <span class="text-right">Rs. 250,000.00</span>
+        </div>
+        <div class="grid grid-cols-2 mt-4">
+          <h1 class="text-sm">Subtotal</h1>
+          <span class="text-right">Rs. 250,000.00</span>
+        </div>
+        <div class="grid grid-cols-2 mt-4">
+          <h1 class="text-sm">Total</h1>
+          <span class="text-right text-lg font-bold text-[#B88E2F]">Rs. 250,000.00</span>
+        </div>
+      </div>
+      <div class=" p-4 rounded-lg">
+        <ul>
+          <li class="font-medium">Direct Bank Transfer</li>
+          <p class="text-sm text-[#9F9F9F]">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+          <div class="mt-4 space-y-2">
+            <label class="flex items-center space-x-2">
+              <input type="radio" name="payment" value="bank" class="form-radio h-5 w-5 text-blue-600">
+              <span class="text-sm text-[#9F9F9F] font-medium">Direct Bank Transfer</span>
+            </label>
+            <label class="flex items-center space-x-2">
+              <input type="radio" name="payment" value="cod" class="form-radio h-5 w-5 text-green-600">
+              <span class="text-sm text-[#9F9F9F] font-medium">Cash On Delivery</span>
+            </label>
+          </div>
+          <p class="text-sm text-black mt-4">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <span class="font-bold text-black"> privacy policy.</p>
+        </ul>
+      </div>
+      <button class="w-full text-black border border-black mb-[31.25rem] rounded-lg h-12">Place Order</button>
+    </div>
+  </section>  
+    <section class="flex flex-wrap justify-around items-center text-center h-auto bg-[#FAF3EA] mt-[5.3125rem] gap-8 p-6">
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <div>
+          <img src="image/image.shop/Group.svg" alt="High Quality" class="h-16 w-16">
+        </div>
+        <div class="text-start">
+          <p class="font-semibold">High Quality</p>
+          <p>crafted from top materials</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <div>
+          <img src="image/image.shop/guarantee.svg" alt="Warranty Protection" class="h-16 w-16">
+        </div>
+        <div class="text-start">
+          <p class="font-semibold">Warranty Protection</p>
+          <p>Over 2 years</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <div>
+          <img src="image/image.shop/Vector (1).svg" alt="Free Shipping" class="h-16 w-16">
+        </div>
+        <div class="text-start">
+          <p class="font-semibold">Free Shipping</p>
+          <p>Order over 150 $</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 w-full sm:w-auto">
+        <div>
+          <img src="image/image.shop/customer-support.svg" alt="24/7 Support" class="h-16 w-16">
+        </div>
+        <div class="text-start">
+          <p class="font-semibold">24 / 7 Support</p>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+    </section>
+    <footer class="border-t-2">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-5 px-6 md:px-[6.25rem]">
+  
+        <div class="mb-8">
+          <div class="font-bold pt-8">Funiro.</div>
+          <h6 class="text-primary-450 pt-8 text-sm">
+            400 University Drive Suite 200 Coral <br /> Gables, <br /> FL 33134 USA
+          </h6>
+        </div>
+        <ul class="">
+          <h6 class="text-primary-450 pt-8 text-sm font-medium">Links</h6>
+          <li class="font-semibold pt-6">Home</li>
+          <li class="font-semibold pt-4">Shop</li>
+          <li class="font-semibold pt-4">About</li>
+          <li class="font-semibold pt-4 pb-8">Contact</li>
+        </ul>
+  
+  
+        <ul>
+          <h6 class="text-primary-450 pt-8 text-sm font-medium">Help</h6>
+          <li class="font-semibold pt-6">Payment Options</li>
+          <li class="font-semibold pt-4">Returns</li>
+          <li class="font-semibold pt-4">Privacy Policies</li>
+        </ul>
+        <div>
+          <h6 class="text-primary-450 pt-8 text-sm font-medium">Newsletter</h6>
+          <ul class="grid grid-cols-1">
+            <li class="text-primary-450 underline pt-6 text-sm">
+              Enter Your Email Address
+            </li>
+            <li class="underline font-semibold list-none pt-8">SUBSCRIBE</li>
+          </ul>
+        </div>
+        <div class="col-span-full md:col-span-5 border-t pt-4">
+          <p class="text-center text-sm font-medium">
+            2023 Funiro. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  
+</body>
+<script src="./index.js">
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'hero-pattern': "url('/image/image.shop/background.pic.svg')",
+        },
+
+        colors: {
+          primary: {
+            50: '#FCF8F3',
+            100: '#FFF3E3',
+            150: '#9F9F9F',
+            200: 'rgba(137, 137, 137, 1)',
+            250: 'rgba(58, 58, 58, 1)',
+            280: ' #333333',
+            300: 'rgba(176, 176, 176, 1)',
+            320: '#666666',
+            350: '#F4F5F7',
+            400: 'rgba(252, 248, 243, 1)',
+            450: '#9F9F9F',
+            500: 'rgba(255, 243, 227, 1)',
+            550: '#F9F1E7',
+            700: 'rgba(184, 142, 47, 1)',
+            900: '#B88E2F',
+            950: 'rgba(97, 97, 97, 1)',
+            1000: '#FCF8F3',
+
+
+
+
+          },
+
+          success: "#2EC1AC",
+          danger: "#E97171",
+          info: "#816DFA",
+          content: {
+            color: "#333333"
+
+          }
+
+
+        }
+      }
+    }
+  }
+</script>
+
+</html>
